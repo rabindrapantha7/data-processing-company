@@ -80,12 +80,10 @@ header {
 
     .container {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
 
         .left {
             flex: 1 0 50%;
-            white-space: wrap;
             max-width: 46%;
 
             h1 {
@@ -96,7 +94,6 @@ header {
                 line-height: 50px;
                 color: var(--secondary-text-color);
                 font-family: var(--primary-font);
-                white-space: pre-wrap;
             }
 
             p {
