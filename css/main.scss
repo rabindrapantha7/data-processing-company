@@ -99,7 +99,9 @@ header {
           position: absolute;
           top: 0;
           right: 0;
-          background: url(./../../images/dots.svg) #fff no-repeat;
+          background: url(./../../images/dots.svg) transparent no-repeat;
+          height: 100%;
+          width: 100%;
         }
 
         &::after {
@@ -107,8 +109,10 @@ header {
           position: absolute;
           top: 0;
           right: 0;
-          background: url(./../../images/artwork.svg) #fff no-repeat;
+          background: url(./../../images/artwork.svg) transparent no-repeat;
           z-index: 1;
+          height: 100%;
+          width: 100%;
         }
       }
     }
