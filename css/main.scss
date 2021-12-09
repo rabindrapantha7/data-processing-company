@@ -11,12 +11,13 @@
   --base-color: #f2994a;
   --primary-text-color: #8476aa;
   --secondary-text-color: #99efd0;
+  --primary-font: "Inter", sans-serif;
 }
 
 @import "helpers";
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--primary-font);
   background-color: var(--background-color);
 }
 
@@ -82,6 +83,61 @@ header {
     .left {
       flex: 1 0 50%;
       white-space: nowrap;
+
+      h1 {
+        padding: 0.5em 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 50px;
+        color: var(--secondary-text-color);
+        font-family: var(--primary-font);
+      }
+
+      p {
+        padding: 0.5em 0;
+        color: var(--primary-text-color);
+        font-family: var(--primary-font);
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      .buttons {
+        margin: 3em 0 4em 0;
+      }
+
+      .preview {
+        display: flex;
+        align-items: center;
+
+        p {
+          padding-top: 0;
+          font-family: var(--primary-font);
+          font-size: 16px;
+          line-height: 22px;
+          color: var(--primary-text-color);
+        }
+
+        a {
+          text-decoration: none;
+          font-family: var(--primary-font);
+          font-size: 14px;
+          line-height: 22px;
+          color: #6D6D78;
+
+          &:hover {
+            color: rgba(111, 111, 124, 0.8);
+          }
+        }
+
+        .play {
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
     }
 
     .right {
@@ -95,7 +151,7 @@ header {
         justify-content: center;
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           right: 0;
@@ -105,7 +161,7 @@ header {
         }
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           right: 0;
