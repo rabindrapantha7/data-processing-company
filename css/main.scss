@@ -79,10 +79,12 @@ header {
   .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     .left {
       flex: 1 0 50%;
-      white-space: nowrap;
+      white-space: wrap;
+      max-width: 45%;
 
       h1 {
         padding: 0.5em 0;
@@ -92,6 +94,7 @@ header {
         line-height: 50px;
         color: var(--secondary-text-color);
         font-family: var(--primary-font);
+        white-space: pre-wrap;
       }
 
       p {
@@ -143,6 +146,7 @@ header {
     .right {
       flex: 1 0 50%;
       white-space: nowrap;
+      max-width: 50%;
       position: relative;
 
       .artwork {
