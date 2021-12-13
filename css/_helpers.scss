@@ -18,56 +18,56 @@
     margin-right: 5em !important;
 }
 
-a {
-    &.button {
-        margin: 0;
-        padding: 0.8em 2.4em;
+.button {
+    margin: 0;
+    padding: 0.8em 2.4em;
+    color: white;
+    border-radius: 0.35em;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+
+    &.outline {
+        border: 1px solid var(--base-color);
+        color: var(--base-color);
+
+        &:hover {
+            background-color: var(--base-color);
+            color: white;
+        }
+    }
+
+    &.solid {
+        border: 1px solid var(--base-color);
+        background-color: var(--base-color);
         color: white;
-        border-radius: 0.35em;
-        text-decoration: none;
-        text-align: center;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+
+        &:hover {
+            background-color: unset;
+            color: var(--base-color);
+        }
+    }
+
+    &.large {
+        padding: 1.2em 2.6em;
+        font-family: var(--primary-font);
         font-weight: 500;
         font-size: 12px;
         line-height: 20px;
-        display: inline-block;
-
-        &.outline {
-            border: 1px solid var(--base-color);
-            color: var(--base-color);
-
-            &:hover {
-                background-color: var(--base-color);
-                color: white;
-            }
-        }
-
-        &.solid {
-            border: 1px solid var(--base-color);
-            background-color: var(--base-color);
-            color: white;
-
-            &:hover {
-                background-color: unset;
-                color: var(--base-color);
-            }
-        }
-
-        &.large {
-            padding: 1.2em 2.6em;
-            font-family: var(--primary-font);
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 20px;
-            text-align: center;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            min-width: 170px;
-        }
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        min-width: 170px;
     }
 }
 
-img {
-    width: 100%;
+span {
+    &.text-orange {
+        color: var(--base-color);
+    }
 }
